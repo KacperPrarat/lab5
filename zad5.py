@@ -1,16 +1,11 @@
-liczbadodatnia = int(input("Podaj liczbe dodatnia"))
-pierwsze = []
-suma = 0
-licznikliczbpierwszych = 0
-for liczba in range(2,liczbadodatnia):
-    czy_pierwsza = True
-    for i in pierwsze:
-        if liczba % i == 0:
-            czy_pierwsza = False
-    if czy_pierwsza:
-        pierwsze.append(liczba)
-while suma < liczbadodatnia:
-    for liczbapierwsza in pierwsze:
-        suma = suma + liczbapierwsza
-        licznikliczbpierwszych = licznikliczbpierwszych + 1
-print(licznikliczbpierwszych)
+b = int(input("Podaj liczbe dodatnia:"))
+a = 1
+c = 0
+licznikliczb = 0
+if b > 0:
+    while (a + c) <= b:
+        a = a + c
+        c = c +1
+        a = a + 1
+        licznikliczb = licznikliczb + 1
+print("Liczba liczb których suma jest mniejsza niż",b,"to",licznikliczb)
