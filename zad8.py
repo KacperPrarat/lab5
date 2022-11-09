@@ -1,7 +1,7 @@
 import random
 losowaliczba = random.randint(0,100)
 liczbapodana = int(input("Podaj losowa liczbe"))
-liczbastrzalow = 0
+liczbastrzalow = 1
 while liczbapodana != losowaliczba:
     liczbapodana = int(input("Podaj losowa liczbe"))
     liczbastrzalow = liczbastrzalow + 1
